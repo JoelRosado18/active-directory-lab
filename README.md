@@ -3,11 +3,11 @@
 ## Overview
 This project simulates a secure enterprise Active Directory environment using virtualization. The lab is designed to develop hands-on system administration and security skills relevant to real-world IT roles.
 
-## Development Notes
+## Development Approach
 
-This project was developed using a combination of hands-on configuration, independent research, and AI-assisted guidance for structuring documentation and workflows.
+This lab follows a structured, documentation-driven approach similar to enterprise environments. AI-assisted tools were used to enhance workflow efficiency and maintain consistent, professional documentation standards.
 
-All system configurations, troubleshooting, and implementation steps were performed and validated within the lab environment.
+All configurations and scenarios were implemented manually and tested within the environment.
 
 ## Objectives
 - Deploy and manage a Windows Server Domain Controller
