@@ -57,4 +57,4 @@ The lab uses a segmented virtual network:
 🚧 In Progress – Building foundational infrastructure
 
 ## Author
-Joel [Last Name]
+Joel Rosado
