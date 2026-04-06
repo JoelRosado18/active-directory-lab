@@ -20,7 +20,7 @@ All configurations and scenarios were implemented manually and tested within the
 
 ## Environment
 - Hypervisor: VirtualBox
-- Host System: 16GB RAM, Ryzen 7 3700X
+- Host System: 32GB RAM, Ryzen 7 3700X
 - Domain: corp.local
 
 ## Architecture
