@@ -28,6 +28,11 @@ The lab uses a segmented virtual network:
 - NAT Adapter: Internet access
 - Internal Network (AD-LAB): Isolated domain environment
 
+### AI Utility Node (AI01)
+- Raspberry Pi 4 running local AI (Gemma via Ollama)
+- Designed for future log analysis and security automation
+- Currently isolated from AD environment to maintain clean deployment baseline
+
 ## Key Technologies
 - Windows Server 2022
 - Active Directory Domain Services (AD DS)
