@@ -1,66 +1,95 @@
 # Active Directory Home Lab
 
 ## Overview
-This project simulates a secure enterprise Active Directory environment using virtualization. The lab is designed to develop hands-on system administration and security skills relevant to real-world IT roles.
 
-## Development Approach
+This project is an enterprise-style Active Directory lab built in VirtualBox to simulate real-world system administration and security environments.
 
-This lab follows a structured, documentation-driven approach similar to enterprise environments. AI-assisted tools were used to enhance workflow efficiency and maintain consistent, professional documentation standards.
+The lab is designed to demonstrate hands-on experience with:
 
-All configurations and scenarios were implemented manually and tested within the environment.
+* Active Directory Domain Services (AD DS)
+* DNS configuration
+* Group Policy (GPO)
+* User and group management (RBAC)
+* Domain-joined systems
+* Security hardening and auditing
+* AI-assisted log analysis (Raspberry Pi)
 
-## Objectives
-- Deploy and manage a Windows Server Domain Controller
-- Implement Active Directory (AD DS) and DNS
-- Configure Group Policy for security enforcement
-- Manage users, groups, and organizational units
-- Implement file sharing with proper access controls
-- Simulate real-world troubleshooting scenarios
-- Apply system hardening and security best practices
-
-## Environment
-- Hypervisor: VirtualBox
-- Host System: 32GB RAM, Ryzen 7 3700X
-- Domain: corp.local
+---
 
 ## Architecture
-The lab uses a segmented virtual network:
-- NAT Adapter: Internet access
-- Internal Network (AD-LAB): Isolated domain environment
 
-### AI Utility Node (AI01)
-- Raspberry Pi 4 running local AI (Gemma via Ollama)
-- Designed for future log analysis and security automation
-- Currently isolated from AD environment to maintain clean deployment baseline
+* Domain Controller: DC01 (Windows Server 2022)
+* Network Design:
 
-## Key Technologies
-- Windows Server 2022
-- Active Directory Domain Services (AD DS)
-- DNS
-- Group Policy (GPO)
-- NTFS Permissions
-- Virtual Networking
+  * NAT (internet access)
+  * Internal Network: AD-LAB
+* AI Node:
 
-## Project Structure
-- `architecture/` → Network design and diagrams
-- `setup/` → Initial system deployment (DC, clients)
-- `ad-structure/` → Organizational Units, users, groups
-- `group-policy/` → Security and configuration policies
-- `file-services/` → Shared resources and permissions
-- `security/` → Hardening and best practices
-- `troubleshooting/` → Issues and resolutions
-- `infastructure/` → Ai-node configuration
+  * Raspberry Pi running local LLM (Ollama + Gemma)
 
-## Skills Demonstrated
-- Active Directory administration
-- Windows Server configuration
-- Network segmentation
-- Access control and identity management
-- Security hardening
-- Troubleshooting and root cause analysis
+---
+
+## Lab Goals
+
+* Simulate enterprise Active Directory environments
+* Practice system administration and troubleshooting
+* Implement security best practices
+* Integrate modern tooling (AI for log analysis)
+
+---
+
+## Project Phases
+
+### Phase 1 — Domain Controller Deployment ✅
+
+* Installed Windows Server 2022
+* Configured AD DS and DNS
+* Implemented static IP and network segmentation
+* Applied initial security hardening
+
+### Phase 2 — Active Directory Structure (In Progress)
+
+* Organizational Units (OUs)
+* Users and Groups (RBAC)
+* Naming conventions
+
+### Phase 3 — Client Integration (Planned)
+
+* Domain-joined Windows clients
+* Authentication validation
+
+### Phase 4 — Group Policy & Security (Planned)
+
+* GPO baseline implementation
+* Security configurations
+
+### Phase 5 — File Services (Planned)
+
+* Shared folders
+* NTFS permissions
+
+### Phase 6 — Monitoring & Logging (Planned)
+
+* Event log analysis
+* AI-assisted insights
+
+---
+
+## Repository Structure
+
+```
+setup/
+infrastructure/
+```
+
+---
+
+## Documentation
+
+Detailed runbooks are available in each section of the repository.
+
+---
 
 ## Status
-🚧 In Progress – Building foundational infrastructure
 
-## Author
-Joel Rosado
+🚧 In Progress — Continuously expanding and refining the environment
