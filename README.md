@@ -49,6 +49,7 @@ The lab uses a segmented virtual network:
 - `file-services/` → Shared resources and permissions
 - `security/` → Hardening and best practices
 - `troubleshooting/` → Issues and resolutions
+- `infastructure/` → Ai-node configuration
 
 ## Skills Demonstrated
 - Active Directory administration
