@@ -1,14 +1,22 @@
 # Active Directory Structure
 
 ## Purpose
-Defines how objects are organized within the domain.
+This section documents the identity and object organization model used in the `corp.local` lab domain.
 
-## Components
-- Organizational Units (OUs)
-- Users
-- Security Groups
+## Scope
+Phase 2 introduces:
+- Organizational Unit (OU) design
+- User naming conventions
+- Group naming conventions
+- RBAC using Global and Domain Local groups
+- Administrative account separation
 
-## Goals
-- Logical organization of resources
-- Role-based access control
-- Scalable structure for enterprise environments
+## Design Goals
+- Organize objects in a way that scales cleanly
+- Support future Group Policy targeting
+- Support future file service permissions
+- Reflect real-world system administration practices
+
+## Included Documentation
+- `ous.md` — OU hierarchy and placement logic
+- `users-groups.md` — users, groups, naming, and RBAC model
