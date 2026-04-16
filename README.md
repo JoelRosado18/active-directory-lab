@@ -41,46 +41,57 @@ The lab is designed to demonstrate hands-on experience with:
 ## Project Phases
 
 ### Phase 1 — Domain Controller Deployment ✅
+- Installed Windows Server 2022 on DC01
+- Configured NAT + Internal Network (AD-LAB)
+- Assigned static IP addressing
+- Installed AD DS and DNS
+- Promoted `corp.local`
+- Applied initial hardening and validation
 
-* Installed Windows Server 2022
-* Configured AD DS and DNS
-* Implemented static IP and network segmentation
-* Applied initial security hardening
-
-### Phase 2 — Active Directory Structure (In Progress)
-
-* Organizational Units (OUs)
-* Users and Groups (RBAC)
-* Naming conventions
+### Phase 2 — Active Directory Structure ✅
+- Designed enterprise-style OU hierarchy
+- Created departmental and administrative OUs
+- Implemented user naming standards
+- Implemented group naming standards
+- Built RBAC group model using Global and Domain Local groups
+- Created test users and separated privileged admin identity
+- Applied initial domain password and account lockout policy
 
 ### Phase 3 — Client Integration (Planned)
+- Deploy Windows client VM
+- Join client to `corp.local`
+- Validate authentication, DNS, and policy application
 
-* Domain-joined Windows clients
-* Authentication validation
-
-### Phase 4 — Group Policy & Security (Planned)
-
-* GPO baseline implementation
-* Security configurations
+### Phase 4 — Group Policy & Security Hardening (Planned)
+- Expand workstation and server GPO baselines
+- Apply administrative templates and security settings
+- Harden client and member-server configuration
 
 ### Phase 5 — File Services (Planned)
-
-* Shared folders
-* NTFS permissions
+- Deploy shared folders and mapped access model
+- Apply NTFS and share permissions
+- Validate access through RBAC groups
 
 ### Phase 6 — Monitoring & Logging (Planned)
-
-* Event log analysis
-* AI-assisted insights
+- Review Windows event logs
+- Build investigation workflows
+- Prepare AI-assisted log analysis integration
 
 ---
 
 ## Repository Structure
 
-```
-setup/
-infrastructure/
-```
+``
+active-directory-lab/
+├── ad-structure/
+├── architecture/
+├── file-services/
+├── group-policy/
+├── infastructure/
+├── security/
+├── setup/
+└── troubleshooting/ 
+``
 
 ---
 
