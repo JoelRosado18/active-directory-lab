@@ -11,10 +11,10 @@ Administrative user accounts:
 - `adm-firstname.lastname`
 
 ## Example Users
-- `john.doe` — IT standard account
+- `bryan.james` — IT standard account
 - `lisa.garcia` — HR standard account
 - `noah.bennett` — Finance standard account
-- `adm-john.doe` — separate privileged admin account
+- `adm-john.smith` — separate privileged admin account
 
 ## Group Naming Convention
 
