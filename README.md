@@ -18,14 +18,13 @@ The lab is designed to demonstrate hands-on experience with:
 
 ## Architecture
 
-* Domain Controller: DC01 (Windows Server 2022)
-* Network Design:
-
-  * NAT (internet access)
-  * Internal Network: AD-LAB
-* AI Node:
-
-  * Raspberry Pi running local LLM (Ollama + Gemma)
+- Domain Controller: `DC01` (Windows Server 2022)
+- Domain Client: `CLIENT01` (Windows domain-joined workstation)
+- Network Design:
+  - NAT (internet access for `DC01`)
+  - Internal Network: `AD-LAB`
+- AI Node:
+  - Raspberry Pi running local LLM (Ollama + Gemma)
 
 ---
 
@@ -41,14 +40,16 @@ The lab is designed to demonstrate hands-on experience with:
 ## Project Phases
 
 ### Phase 1 — Domain Controller Deployment ✅
-- Installed Windows Server 2022 on DC01
-- Configured NAT + Internal Network (AD-LAB)
+
+- Installed Windows Server 2022 on `DC01`
+- Configured NAT + Internal Network (`AD-LAB`)
 - Assigned static IP addressing
 - Installed AD DS and DNS
 - Promoted `corp.local`
 - Applied initial hardening and validation
 
 ### Phase 2 — Active Directory Structure ✅
+
 - Designed enterprise-style OU hierarchy
 - Created departmental and administrative OUs
 - Implemented user naming standards
@@ -57,22 +58,27 @@ The lab is designed to demonstrate hands-on experience with:
 - Created test users and separated privileged admin identity
 - Applied initial domain password and account lockout policy
 
-### Phase 3 — Client Integration (Planned)
-- Deploy Windows client VM
-- Join client to `corp.local`
-- Validate authentication, DNS, and policy application
+### Phase 3 — Client Integration (In Progress)
+
+- Deploy Windows client VM (`CLIENT01`)
+- Join `CLIENT01` to `corp.local`
+- Validate DNS, authentication, and workstation trust
+- Prepare workstation OU targeting for future Group Policy
 
 ### Phase 4 — Group Policy & Security Hardening (Planned)
+
 - Expand workstation and server GPO baselines
 - Apply administrative templates and security settings
 - Harden client and member-server configuration
 
 ### Phase 5 — File Services (Planned)
+
 - Deploy shared folders and mapped access model
 - Apply NTFS and share permissions
 - Validate access through RBAC groups
 
 ### Phase 6 — Monitoring & Logging (Planned)
+
 - Review Windows event logs
 - Build investigation workflows
 - Prepare AI-assisted log analysis integration
