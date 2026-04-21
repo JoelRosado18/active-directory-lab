@@ -25,7 +25,7 @@ Phase 3 extends the environment beyond the domain controller and validates real 
 
 ### Recommended VM Specs
 
-- Guest OS: Windows 10 Pro or Windows 11 Pro
+- Guest OS: Windows 10 Pro or Windows 11 Pro (I used Windows 10 Enterprise & it worked fine)
 - vCPU: 2
 - RAM: 4 GB minimum, 6 GB preferred
 - Disk: 64 GB dynamically allocated
