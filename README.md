@@ -58,26 +58,25 @@ The lab is designed to demonstrate hands-on experience with:
 - Created test users and separated privileged admin identity
 - Applied initial domain password and account lockout policy
 
-### Phase 3 — Client Integration (In Progress)
+### Phase 3 — Client Integration ✅
 
 - Deploy Windows client VM (`CLIENT01`)
 - Join `CLIENT01` to `corp.local`
 - Validate DNS, authentication, and workstation trust
 - Prepare workstation OU targeting for future Group Policy
 
-### Phase 4 — Group Policy & Security Hardening (Planned)
+### Phase 4 — Group Policy & Security Hardening ✅
 
 - Expand workstation and server GPO baselines
 - Apply administrative templates and security settings
 - Harden client and member-server configuration
 
-### Phase 5 — File Services (Planned)
-
+### Phase 5 — File Services ✅
 - Deploy shared folders and mapped access model
 - Apply NTFS and share permissions
 - Validate access through RBAC groups
 
-### Phase 6 — Monitoring & Logging (Planned)
+### Phase 6 — Monitoring & Logging ✅
 
 - Review Windows event logs
 - Build investigation workflows
